@@ -1,18 +1,170 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Kevin Umali</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript/script.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/logo.png" width="60px" height="auto">
+        </a>
+        <div class="menu-toggle" id="menu"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <nav class="sns">
+            <ul>
+                <li><img src="img/icons8-github-48.png" width="25px"></a></li>
+                <li><a href="https://www.linkedin.com/in/kevin-u-3b4a60192/"><img src="img/icons8-linkedin-48.png"
+                            width="25px"></a></li>
+                <li><a href="https://www.facebook.com/SemiKulot/"><img src="img/icons8-facebook-48.png"
+                            width="25px"></a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+    <section class="welcome">
+        <img src="img/undraw_dev_productivity_umsq.png" class="welcomeImg">
+        <div class="content">
+            <h2>Hello, I am <br><span class="myname">Kevin Umali</span></h2>
+            <p>I'm a Software and Web Developer</p>
+            <a href="#about" class="btn">About Me</a>
+            <a href="#about" class="btn resume">Resume</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <img src="img/undraw_ideas_s70l(1).png" class="aboutImg">
+        <div class="content">
+            <h2>About Me</span></h2>
+            <hr>
+            <p>
+                <br>
+                Hello, I'm Kevin Umali.
+                <br><br>
+                I am a graduate with a degree of Bachelor of Science in Information
+                Technology
+                who seeks for a first job where can help me to enhance and utilize my skill related to my
+                field.
+                <br><br>
+                In return, I offer my dedication and knowledge to be able to contribute in the organization.
+            </p>
+        </div>
+    </section>
+    <section class="works" id="portfolio">
+        <div class="worksHeading">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="content">
+            <div class="workCards">
+                <img src="img/Movie-torrent-mockup.png">
+                <h2>Movie Torrent</h2><br>
+                <p>A Website application for downloading torrent movie in high resolution such as 4k, 1080p and 720p</p>
+                <a href="https://kooma-movie-torrent.ml/" class="btn worksBtn">Demo</a>
+                <a href="https://github.com/Keumjoh/movie-app-javascript" class="btn worksBtn">Code</a>
+            </div>
+            <div class="workCards">
+                <img src="img/Covid19-Interface-Overview.PNG">
+                <h2>COVID-19 Desktop Application</h2><br>
+                <p>A desktop application for tracking cases of Covid-19 using API and Self-Assessment tool.</p>
+                <a href="https://mega.nz/file/wQxTjYSZ#t7cf_azOPFp8pvegaUBU8XvcKspvlcHYjvLP47Ogcls"
+                    class="btn worksBtn">Download</a>
+                <a href="https://github.com/Keumjoh/COVID-19" class="btn worksBtn">Code</a>
+            </div>
+            <div class="workCards">
+                <img src="img/NovelReader-Interface.PNG">
+                <h2>Light-Web NovelReader</h2><br>
+                <p>A desktop application for reading and downloading light and web novel</p>
+                <a href="https://sourceforge.net/projects/light-web-novelreader/files/latest/download"
+                    class="btn worksBtn">Download</a>
+                <a href="https://github.com/Keumjoh/NovelReader" class="btn worksBtn">Code</a>
+            </div>
+        </div>
+    </section>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+    <section class="contact" id="contact">
+        <div class="contactHeading">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="content">
+            <form action="">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
 
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <h1>Explore</h1>
+                <ul>
+                    <a href="#home">
+                        <li>Home</li>
+                    </a>
+                    <a href="#about">
+                        <li>About</li>
+                    </a>
+                    <a href="#portfolio">
+                        <li>Portfolio</li>
+                    </a>
+                    <a href="#contact">
+                        <li>Contact Me</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Info</h1>
+                <ul>
+                    <li>Location: <br>Cabuyao, Laguna</li>
+                    <li>Contact No: <br>+63 955 148 9282</li>
+                </ul>
+            </div>
+            <div class="col social">
+                <h1>Social</h1>
+                <ul>
+                    <li><a href="https://github.com/Keumjoh"><img src="img/icons8-github-48.png" width="25px"></a></li>
+                    <li><a href="https://www.linkedin.com/in/kevin-u-3b4a60192/"><img src="img/icons8-linkedin-48.png"
+                                width="25px"></a></li>
+                    <li><a href="https://www.facebook.com/SemiKulot/"><img src="img/icons8-facebook-48.png"
+                                width="25px"></a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('header').toggleClass('active')
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active');
+            })
+        });
+    </script>
 </body>
+
 </html>
